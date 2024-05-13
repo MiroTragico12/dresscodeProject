@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Glitch+Pop&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    min-height: 200vh;
+    background-color: #e3e9f7;
+    display: flex;
+}
+
+main{
+        padding: 20px;
+        width: calc(100% - 120px); 
+        margin-left: 120px; 
+    
+}
+
+#sidebar{
+   display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #023047;
+    border-right: 3px solid #ffb703;
+    border-radius: 0px 13px 13px 0px;
+    height: 100vh;
+    position: fixed; 
+    width: 120px;
+    transition:all .5s;
+    min-width: 82px;
+}
+
+#logo img{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 15px 5px 15px 15px;
+   
+
+}
+
+#logo{
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+    transition: width 0.5s;
+    width: 120px;
+}
+
+#logo span{
+
+    color: #ffb703;
+    font-size: 20px;
+    padding: 12px;
+    overflow: hidden;
+}
+
+#side-item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    list-style: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.side-item{
+    border-radius: 8px;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.side-item a{
+
+    color: #ffb703;
+    text-decoration: none;
+    font: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+   
+}
+
+.side-item a i{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 20px;
+    height: 20px;
+}
+
+.side-item a span{
+    margin-left: 5px;
+  
+}
+
+.side-item.active{
+   background-color: #ff8800; 
+}
+
+.side-item:hover:not(.active),#logout-btn:hover{
+
+    background-color: #092b3a;
+}
+
+.side-item.active a{
+    color: #023047;
+    
+}
+
+#logout{
+    border-top: 2px solid #092b3a;
+}
+
+#logout-btn{
+    border: none;
+    padding: 12px;
+    font-size: 15px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    border-radius: 10px;
+    text-align: start;
+    cursor: pointer;
+    background-color: transparent;
+    margin: 10px 0px 10px 5px;
+    color: #ffb703;
+}
+
+
+#open-btn-menu{
+    position: absolute;
+    top: 85px;
+    right: -10px;
+    background-color: #ff8800;
+    border-radius:100%;
+    width: 25px;
+    height: 25px;
+    border: 2px solid #ffb703;
+    color: #092b3a;
+    cursor: pointer;
+}
+
+.item-description{
+    width: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    transition: width .5s;
+    height: 0px;
+    
+}
+
+#sidebar.open-sidebar{
+    min-width:19%;
+} 
+
+#sidebar.open-sidebar .item-description{
+    width: 150px;
+    height: auto;
+}
+
+
+#sidebar.open-sidebar .side-item a{
+    justify-content: flex-start;
+    gap: 14px;
+    
+}
+
+.hide-text {
+    display: none;
+}
+
+#open-btn-icon{
+    transition: transform .3s ease;
+}
+
+.open-sidebar #open-btn-icon{
+    transform: rotate(180deg);
+}
+
+main {
+    padding: 20px;
+    margin-left: 120px; /* Largura do sidebar */
+    flex-grow: 1; /* Ocupa todo o espaço disponível */
+}
+
+main div {
+    display: flex;
+    justify-content: center;
+    
+}
