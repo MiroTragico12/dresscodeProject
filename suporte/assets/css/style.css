@@ -12,7 +12,7 @@
 
 
 body{
-    min-height: 250vh;
+    min-height: 100vh;
     background-color: #8ecae6;
     display: flex;
     width: 800px;
@@ -317,7 +317,7 @@ border-radius: 20px;
     height: 70px;
     transform: rotate(2deg);    
     position: absolute; 
-    top: 950px; 
+    top: 40px; 
     bottom: 10px;
     left: 110px;    
     z-index: -1; 
@@ -424,3 +424,111 @@ footer div a{
 
 
 
+#suporte{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: 320px;
+    
+}
+
+#suporte textarea{
+    width: 500px;
+    height: 200px;
+    border: 3px solid #ffb703;
+    padding: 5px;
+    
+    
+}
+
+#suporte input{
+    margin-bottom: 0px;
+    padding: 5px;
+
+}
+
+.form-control-name{
+  position: absolute;
+  top: 140px;
+  left: 525px;
+  border: 2px solid #ffb703;
+  height: 50px;
+  width: 220px;
+}
+
+.form-control-email{
+    height: 50px;
+    position: absolute;
+    top: 140px;
+    left: 750px;
+    width: 275px;
+    border: 2px solid #ffb703;
+}
+
+.form-control-ass{
+    position: absolute;
+    top: 200px;
+    left: 525px;
+    height: 50px; 
+    width: 300px;
+    border: 2px solid #ffb703;
+}
+
+.form-control-tel{
+    position: absolute;
+    top: 200px;
+    left: 830px;
+    height: 50px; 
+    width: 195px;
+    border: 2px solid #ffb703;
+    
+}
+
+.form-control{
+    position: absolute;
+    top: 270px;
+}
+
+#prenchedor{
+    height: 300px;
+}
+
+#formulario-section h1{
+    text-align: center;
+    margin-left: 280px;
+    margin-top: 55px;
+    color: #ffb703;
+    
+}
+
+input:focus {
+    outline: none; 
+    border-color: #ffb703; 
+    box-shadow: 0 0 5px rgba(255, 183, 3, 0.5); 
+}
+
+textarea:focus {
+    outline: none; 
+    border-color: #ffb703; 
+    box-shadow: 0 0 5px rgba(255, 183, 3, 0.5); 
+}
+
+input::placeholder {
+    padding-left: 10px; 
+    color: #092b3a;
+    font-weight: bold; 
+    font-style: italic; 
+}
+
+
+textarea::placeholder {
+    padding-left: 10px; 
+    padding-top: 10px;
+    color: #092b3a;
+    font-size: 15px;
+    font-weight: bold; 
+    font-style: italic; 
+    
+}
